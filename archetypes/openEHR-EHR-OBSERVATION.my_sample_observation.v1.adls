@@ -21,7 +21,39 @@ definition
                 events matches {
                     EVENT[id3] matches {    -- Any event
                         data matches {
-                            ITEM_TREE[id4] 
+                            ITEM_TREE[id4] matches {
+                                items matches {
+                                    ELEMENT[id6] matches {    -- Quantity A
+                                        value matches {
+                                            DV_QUANTITY[id7] matches {
+                                                property matches {[at1]}
+                                                [units, magnitude, precision] matches {
+                                                    [{"Btu/s-ft2"}, {|>0.0..<1000.0|}, {|>=0|}]
+                                                }
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id8] matches {    -- Text A
+                                        value matches {
+                                            DV_TEXT[id9] 
+                                        }
+                                    }
+                                    ELEMENT[id10] matches {    -- Boolean A
+                                        value matches {
+                                            DV_BOOLEAN[id11] matches {
+                                                value matches {True, False; false}
+                                            }
+                                        }
+                                    }
+                                    ELEMENT[id12] matches {    -- DateTime A
+                                        value matches {
+                                            DV_DATE_TIME[id13] matches {
+                                                value matches {*}
+                                            }
+                                        }
+                                    }
+                                }
+                            }
                         }
                         state matches {
                             ITEM_TREE[id5] 
@@ -33,6 +65,12 @@ definition
     }
 
 terminology
+    term_bindings = <
+        ["openehr"] = <
+            ["at1"] = <http://openehr.org/id/368>
+        
+        >
+    >
     term_definitions = <
         ["en"] = <
             ["id1"] = <
@@ -42,6 +80,26 @@ terminology
             ["id3"] = <
                 text = <"Any event">
                 description = <"Any event">
+            >
+            ["id6"] = <
+                text = <"Quantity A">
+                description = <"Quantity A">
+            >
+            ["at1"] = <
+                text = <"Power Flux">
+                description = <"Power Flux">
+            >
+            ["id8"] = <
+                text = <"Text A">
+                description = <"Text A">
+            >
+            ["id10"] = <
+                text = <"Boolean A">
+                description = <"Boolean A">
+            >
+            ["id12"] = <
+                text = <"DateTime A">
+                description = <"DateTime A">
             >
         >
     >
