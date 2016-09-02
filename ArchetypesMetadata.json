@@ -235,7 +235,7 @@
     "rmType" : "OBSERVATION",
     "name" : "My Sample Observation",
     "path" : "archetypes/openEHR-EHR-OBSERVATION.my_sample_observation.v1.adls",
-    "sha" : "c99d294dd45b4692378e13700728d24cb784074e",
+    "sha" : "2ae7c98ee6b53072682b41c48a9fff4df3f625e3",
     "languages" : [ "en" ]
   } ]
 }
