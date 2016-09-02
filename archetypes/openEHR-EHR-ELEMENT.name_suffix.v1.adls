@@ -1,0 +1,55 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-ELEMENT.name_suffix.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    ELEMENT[id1]     -- Name Suffix
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Name Suffix">
+                description = <"Name Suffix">
+            >
+            ["at1"] = <
+                text = <"MD">
+                description = <"MD">
+            >
+            ["at2"] = <
+                text = <"PHD">
+                description = <"PHD">
+            >
+            ["at3"] = <
+                text = <"JR">
+                description = <"Jr.">
+            >
+            ["at4"] = <
+                text = <"SR">
+                description = <"Sr.">
+            >
+            ["ac1"] = <
+                text = <"Name Suffix">
+                description = <"Suffixes for human names">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4">
+        >
+    >
+
