@@ -1,0 +1,61 @@
+archetype (adl_version=2.0.4; rm_release=1.0.2)
+    openEHR-EHR-ELEMENT.name_prefix.v1.0.0
+
+language
+    original_language = <[ISO_639-1::en]>
+    
+description
+    copyright = <"">
+    details = <
+        ["en"] = <
+            language = <[ISO_639-1::en]>
+            purpose = <"">
+        >
+    >
+    lifecycle_state = <"unmanaged">
+
+definition
+    ELEMENT[id1] matches {    -- Name Prefix
+        value matches {
+            DV_CODED_TEXT[id2] matches {
+                defining_code matches {[ac1]}
+            }
+        }
+    }
+
+terminology
+    term_definitions = <
+        ["en"] = <
+            ["id1"] = <
+                text = <"Name Prefix">
+                description = <"Name Prefix">
+            >
+            ["at1"] = <
+                text = <"MR">
+                description = <"Mr.">
+            >
+            ["at2"] = <
+                text = <"MRS">
+                description = <"Mrs.">
+            >
+            ["at3"] = <
+                text = <"MS">
+                description = <"Ms.">
+            >
+            ["ac1"] = <
+                text = <"Name Prefix">
+                description = <"Prefix for a human name">
+            >
+            ["at4"] = <
+                text = <"DR">
+                description = <"Dr.">
+            >
+        >
+    >
+    value_sets = <
+        ["ac1"] = <
+            id = <"ac1">
+            members = <"at1", "at2", "at3", "at4">
+        >
+    >
+
