@@ -237,5 +237,33 @@
     "path" : "archetypes/openEHR-EHR-OBSERVATION.my_sample_observation.v1.adls",
     "sha" : "2ae7c98ee6b53072682b41c48a9fff4df3f625e3",
     "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-ELEMENT.family_name.v1.0.0",
+    "rmType" : "ELEMENT",
+    "name" : "Family Name",
+    "path" : "archetypes/openEHR-EHR-ELEMENT.family_name.v1.adls",
+    "sha" : "ff42acf570526a7f2f74de34a734f1c2ad9783f3",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-ELEMENT.given_name.v1.0.0",
+    "rmType" : "ELEMENT",
+    "name" : "Given Name",
+    "path" : "archetypes/openEHR-EHR-ELEMENT.given_name.v1.adls",
+    "sha" : "8c413085a471bc9087ced6fab8fd192ea5c7ed9b",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-ELEMENT.name_prefix.v1.0.0",
+    "rmType" : "ELEMENT",
+    "name" : "Name Prefix",
+    "path" : "archetypes/openEHR-EHR-ELEMENT.name_prefix.v1.adls",
+    "sha" : "c16bdaea90cf8d44fa2a073a794147429bba633a",
+    "languages" : [ "en" ]
+  }, {
+    "id" : "openEHR-EHR-ELEMENT.name_suffix.v1.0.0",
+    "rmType" : "ELEMENT",
+    "name" : "Name Suffix",
+    "path" : "archetypes/openEHR-EHR-ELEMENT.name_suffix.v1.adls",
+    "sha" : "195960322f530c33ae9e2bdd49fb83c4251ecb6a",
+    "languages" : [ "en" ]
   } ]
 }
